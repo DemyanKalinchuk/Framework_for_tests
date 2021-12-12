@@ -14,7 +14,7 @@ public class HomePage extends BasePage {
 private final By clickreg = (By.xpath("input[@class='search-form__input ng-pristine ng-valid ng-touched']"));
 
 public HomePage clickSearch(){
-driver.findElement(clickreg).sendKeys("Видеокарти", Keys.ENTER);
+driver.findElement(clickreg).sendKeys("Video cards", Keys.ENTER);
     return this;
 }
 

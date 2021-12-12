@@ -46,33 +46,30 @@
             <artifactId>selenium-api</artifactId>
             <version>2.53.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20</version>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>LATEST</version>
                 <configuration>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
-                    <systemProperties>
-                        <property>
-                            <name>allure.results.directory</name>
-                            <value>${project.build.directory}/allure-results</value>
-                        </property>
-                    </systemProperties>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/${suiteXml}</suiteXmlFile>
-                    </suiteXmlFiles>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20</version>
+                <version>3.0.0-M5</version>
                 <configuration>
                     <systemProperties>
                         <property>
@@ -97,7 +94,7 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.10.0</version>
                 <configuration>
-                    <allureDownloadUrl>https://github.com/allure-framework/allure/releases/download/2.7.0/allure-2.7.0.zip</allureDownloadUrl>
+                    <allureDownloadUrl>https://github.com/allure-framework/allure2/releases/allure-2.17.1.zip</allureDownloadUrl>
                     <resultsDirectory>allure_results</resultsDirectory>
                 </configuration>
             </plugin>

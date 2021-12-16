@@ -16,4 +16,6 @@ public class SearchSomeProductTest extends BaseTest {
         realtListingPage.checkCountCards();
     }
 
+
+
 }

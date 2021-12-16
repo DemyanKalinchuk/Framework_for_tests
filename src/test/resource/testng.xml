@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" name="F:/Framework_for_tests">
-        <classes>
-        <class name="tests.searchapartment.SearchSomeProductTest">
+        <packages>
+        <package name="tests.searchapartment.RegisterPages">
 
-        </class>
-        </classes>
+        </package>
+        </packages>
     </test>
 </suite>

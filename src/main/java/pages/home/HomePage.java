@@ -11,10 +11,10 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
-private final By clickreg = (By.xpath("//input[@name='search']"));
+private final By clickserch = (By.xpath("//input[@name='search']"));
 
 public HomePage clickSearch(){
-driver.findElement(clickreg).sendKeys("Video cards", Keys.ENTER);
+driver.findElement(clickserch).sendKeys("Video cards", Keys.ENTER);
     return this;
 }
 

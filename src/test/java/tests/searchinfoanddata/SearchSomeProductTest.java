@@ -1,4 +1,4 @@
-package tests.searchapartment;
+package tests.searchinfoanddata;
 
 import org.testng.annotations.Test;
 import tests.base.BaseTest;

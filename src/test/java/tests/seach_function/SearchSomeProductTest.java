@@ -1,4 +1,4 @@
-package tests.registration;
+package tests.seach_function;
 
 import org.testng.annotations.Test;
 import tests.base.BaseTest;

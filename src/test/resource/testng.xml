@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" name="F:/Framework_for_tests">
         <packages>
-        <package name="tests.basket">
+        <package name="tests.registration">
 
         </package>
         </packages>

@@ -7,7 +7,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import pages.base.BasePage;
 import pages.home.BasketPage;
-import pages.home.HomePage;
+import pages.home.SearchFunction;
 import pages.home.RegisterPage;
 import pages.listing.RealtListingPage;
 
@@ -19,7 +19,7 @@ public class BaseTest {
 
     protected WebDriver driver = CommonActions.createDriver();
     protected BasePage basePage = new BasePage(driver);
-    protected HomePage homePage = new  HomePage(driver);
+    protected SearchFunction homePage = new SearchFunction(driver);
     protected RegisterPage registerPage = new RegisterPage(driver);
     protected RegisterPage enterEmail = new RegisterPage(driver);
     protected RegisterPage enterPass = new RegisterPage(driver);

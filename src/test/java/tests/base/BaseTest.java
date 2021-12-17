@@ -6,9 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import pages.base.BasePage;
+import pages.home.BasketPage;
 import pages.home.HomePage;
 import pages.home.RegisterPage;
 import pages.listing.RealtListingPage;
+
 
 import static common.Config.CLEAR_COOKIES_AND_STORAGE;
 import static common.Config.HOLD_BROWSER_OPEN;
@@ -29,8 +31,13 @@ public class BaseTest {
     protected RegisterPage inputPhone = new RegisterPage(driver);
     protected RegisterPage inputMail = new RegisterPage(driver);
     protected RegisterPage inputPass = new RegisterPage(driver);
+    protected BasketPage enterBasket = new BasketPage(driver);
+    protected BasketPage closeBasket = new BasketPage(driver);
     protected RealtListingPage realtListingPage = new RealtListingPage(driver);
-@AfterTest
+
+
+
+    @AfterTest
     public void clearCookiesAndLocalStorage(){
         if (CLEAR_COOKIES_AND_STORAGE){
             JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;

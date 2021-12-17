@@ -1,4 +1,4 @@
-package tests.searchinfoanddata;
+package tests.registration;
 
 import org.testng.annotations.Test;
 import tests.base.BaseTest;

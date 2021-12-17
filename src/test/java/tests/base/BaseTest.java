@@ -22,6 +22,13 @@ public class BaseTest {
     protected RegisterPage enterEmail = new RegisterPage(driver);
     protected RegisterPage enterPass = new RegisterPage(driver);
     protected RegisterPage enterReg = new RegisterPage(driver);
+    protected RegisterPage enterRegBtn = new RegisterPage(driver);
+    protected RegisterPage enterRegBtn2 = new RegisterPage(driver);
+    protected RegisterPage inputName = new RegisterPage(driver);
+    protected RegisterPage inputLastName = new RegisterPage(driver);
+    protected RegisterPage inputPhone = new RegisterPage(driver);
+    protected RegisterPage inputMail = new RegisterPage(driver);
+    protected RegisterPage inputPass = new RegisterPage(driver);
     protected RealtListingPage realtListingPage = new RealtListingPage(driver);
 @AfterTest
     public void clearCookiesAndLocalStorage(){

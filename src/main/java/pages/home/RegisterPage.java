@@ -42,7 +42,56 @@ public class RegisterPage extends BasePage {
         return this;
     }
 
+    private final By enterRegBtn = (By.xpath("//button[@class='auth-modal__register-link button button--link ng-star-inserted']"));
+
+
+    public RegisterPage clickregbtn() {
+        driver.findElement(enterRegBtn).click();
+        return this;
 }
+    private final By inputName = (By.id("registerUserName"));
+
+    public RegisterPage clickname() {
+        driver.findElement(inputName).sendKeys("Петя");
+        return this;
+    }
+
+    private final By inputLastName = (By.id("registerUserSurname"));
+
+    public RegisterPage clicklastname() {
+        driver.findElement(inputLastName).sendKeys("Четкий");
+        return this;
+    }
+    private final By inputPhone = (By.id("registerUserPhone"));
+
+    public RegisterPage clickphone() {
+        driver.findElement(inputPhone).sendKeys("932239777");
+        return this;
+    }
+    private final By inputMail = (By.id("registerUserEmail"));
+
+    public RegisterPage clickmail() {
+        driver.findElement(inputMail).sendKeys("demonation2222222@mail.ru");
+        return this;
+    }
+    private final By inputPass = (By.id("registerUserPassword"));
+
+    public RegisterPage clickpass() {
+        driver.findElement(inputPass).sendKeys("qwaszxERDFCV123456");
+        return this;
+    }
+    private final By enterRegBtn2 = (By.xpath("//button[@class='button button--large button--green auth-modal__submit']"));
+
+
+    public RegisterPage clickregbtn2() {
+        driver.findElement(enterRegBtn2).click();
+        return this;
+    }
+
+}
+
+
+
 
 
 

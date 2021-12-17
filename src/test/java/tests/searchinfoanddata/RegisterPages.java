@@ -20,6 +20,21 @@ public class RegisterPages extends BaseTest {
                 .clickPass();
         enterReg
                 .clickAutor();
+        enterRegBtn
+                .clickregbtn();
+        inputName
+                .clickname();
+        inputLastName
+                .clicklastname();
+        inputPhone
+                .clickphone();
+        inputMail
+                .clickmail();
+        inputPass
+                .clickpass();
+        enterRegBtn2
+                .clickregbtn2();
+
     }
 
 
